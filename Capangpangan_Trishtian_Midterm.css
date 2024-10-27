@@ -1,0 +1,546 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    width: 80%;
+    padding: 10px 10%;
+    background-color:#0f0f0f;
+    backdrop-filter: blur;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+.navigation a{
+    
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+
+}
+
+.navigation a:hover{
+    
+    text-decoration: none;
+    color: #f1dd98;
+    text-decoration:underline;
+
+}
+
+
+.logo {
+
+    color: #f1dd98;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.socials {
+
+    display: flex;
+    gap: 15px;
+}
+
+.socials i {
+
+    font-size: 20px;
+    color: white;
+}
+
+
+.introduction-section {
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+    padding: 0px 75px;
+}
+
+
+.introduction-section .information-container {
+    flex: 5;
+    text-align: left;
+
+}
+
+.introduction-section .information-container h5 {
+
+    font-size: 15px;
+    color:#f1dd98;
+
+}
+
+
+.introduction-section .information-container h1 {
+
+    margin-top: 10px;
+    font-size: 35px;
+
+}
+
+.introduction-section .information-container h1 span {
+
+    color: white;
+}
+
+.introduction-section .information-container h2 {
+
+    margin-top: 10px;
+    font-size: 20px;
+    color:#f1dd98;
+ 
+
+}
+
+.introduction-section .information-container p {
+
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+.introduction-section .information-container .butts {
+
+    margin-top: 25px;
+
+}
+
+.introduction-section .information-container .butts a {
+
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #f1dd98;
+    color: #f1dd98;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.introduction-section .information-container .butts a:hover {
+
+    transform: translateY(-10px); 
+    background-color: #f1dd98;
+    color: black;
+
+}
+
+.introduction-section .imgcon {
+    flex: 2;
+}
+
+.introduction-section .imgcon img {
+
+    position: relative;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    transform: translate(-60%);
+    transition: left 2s ease;
+    border: 4px solid #f1dd98;
+    box-shadow: 0 0 15px 5px rgba(241, 221, 152, 0.6);
+
+}
+
+.introduction-section .imgcon img:hover {
+
+    left: 70%;
+
+
+}
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.1;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+#aboutme-section {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 1em;
+
+
+}
+
+#aboutme-section .imgcon2 img {
+    width: 300px;
+    height: auto;
+    border-radius: 700px;
+    border: 2px solid black;
+
+}
+
+#aboutme-section .aboutme {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #1d1d1d;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#aboutme-section .aboutme div {
+
+    align-self: center;
+}
+
+#aboutme-section .aboutme h2 {
+
+    font-size: 30px;
+    
+}
+
+#aboutme-section .aboutme h1 {
+
+    font-size: 50px;
+ 
+    font-weight: 700;
+
+}
+
+
+#aboutme-section .aboutme p {
+
+    font-size: 17px;
+    font-weight: 200;
+    margin: 0.5em 0 3em;
+}
+
+#education-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 15px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+
+}
+
+#education-section .title {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#education-section h6 {
+
+    font-size: 25px;
+   
+}
+
+#education-section p {
+
+    font-size: 12px;
+    color: #f1dd98;
+
+}
+
+
+.educ-container {
+
+    display: flex;
+    
+    gap: 15px;
+
+}
+
+
+.educ-container div {
+
+    background-color: #1d1d1d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educ-container div:hover {
+    transform: translateY(-10px);
+}
+
+.educ-container div h4 {
+
+    align-self: center;
+}
+
+.educ-container div a {
+ 
+    font-size: 12px;
+}
+
+.educ-container div p {
+
+    font-size: 12px;
+}
+
+
+.educ-container div p span {
+  
+    color: #f1dd98;
+}
+.educ-container div img{
+
+    
+    border-radius: 5px;
+    
+    
+}
+
+.other-container {
+
+    display: flex;
+ 
+    gap: 15px;
+
+}
+
+.other-container div {
+
+    background-color: #1d1d1d;
+    padding: 20px;
+    border-radius: 15px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.other-container div:hover {
+    
+    transform: translateY(-10px); 
+}
+
+.other-container div h4 {
+
+    align-self: center;
+}
+
+.other-container div a {
+ 
+    font-size: 12px;
+}
+
+.other-container div p {
+
+    font-size: 12px;
+}
+.other-container div img{
+
+    
+    border-radius: 10px;
+    
+    
+}
+
+#skills-section {
+  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12% 8%;
+    gap: 20px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+
+}
+
+#skills-section .title {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+#skills-section .title div a{
+    color: gray;
+    font-size: 13px;
+    text-decoration: none;
+  
+    
+}
+
+
+#skills-section .title a:hover{
+   
+    color: #f1dd98;
+    background-color: rgba(241, 221, 152, 0.1);
+    border-radius: 5px;
+    padding: 8px;
+
+}
+
+
+
+
+#skills-section .tech-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px;
+}
+
+#skills-section .tech-container div {
+    display: flex;
+    border: 2px solid #f1dd98;
+    width: 190px;
+    padding: 12px;
+    border-radius: 5px;
+    gap: 10px;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+#skills-section .tech-container div p {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#skills-section .tech-container div p span {
+
+    height: 0; 
+    opacity: 0; 
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease; 
+    font-size: 12px;
+    color: gray; 
+    
+
+}
+
+#skills-section .tech-container div:hover span {
+    
+    height: 20px; 
+    opacity: 1;
+
+}
+
+#skills-section .tech-container  div img {
+    
+    margin-left: 5px;
+}
+
+#contact-section {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 43vh;
+    width: 80%;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
+
+}
+
+#contact-section h1{
+
+    align-self: center;
+
+}
+
+#contact-section .contacts {
+    display: flex;
+    align-self: center;
+    gap: 20px;
+
+}
+
+#contact-section .contacts div {
+    
+    background-color: #1d1d1d;
+    padding: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-section .contacts div:hover {
+    transform: translateY(-10px); 
+}
+
+#contact-section .contacts div img {
+
+    align-self: center;
+}
+
+#contact-section a{
+    align-self: center;
+    text-decoration: none;
+    color: white;
+}
+#contact-section a:hover{
+    
+    color:#f1dd98;
+}
